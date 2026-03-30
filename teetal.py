@@ -1,12 +1,14 @@
 import os
 import sys
 #головні файли, память
+#ai
 def resource_path(relative_path):
     try:
         base_path = sys._MEIPASS
     except Exception:
         base_path = os.path.abspath(".")
     return os.path.join(base_path, relative_path)
+#endai
 
 def sortirovka():
     stan = True
@@ -26,7 +28,6 @@ def sortirovka():
             vvid = int(input(f"Введіть число {counter} для додавання: "))
             jopka.append(vvid)
 
-        # Сортування (Bubble Sort)
         for i in range(len(jopka)):
             for j in range(len(jopka)):
                 if jopka[i] < jopka[j]:
@@ -67,7 +68,7 @@ def calc():
      print(f"Результат: {x2 * x3}")
     elif x1 == "/":
      print(f"Результат: {x2 / x3}")
-
+#ai
 def open_media():
     # ВИПРАВЛЕНО: назви точно як на твоїх скріншотах
     image_path = resource_path("konor.jpg")
@@ -83,6 +84,7 @@ def open_media():
         os.startfile(music_path)
     else:
         print(f"Файл {music_path} не знайдено!")
+#endai
 
 print("Вітаємо в EasyOS")
 #Провідник
@@ -112,7 +114,7 @@ while stanprocess:
         print("===============")
         rahuvalnyk()
         print("===============")
-    elif maininput == "єбу діток":
+    elif maininput == "конор":
          open_media()
     elif maininput == "4": # ВИПРАВЛЕНО: додано лапки
         print("===============")
