@@ -98,11 +98,11 @@ while stanprocess:
 
     maininput = (input("Оберіть програму: "))
 #Виконувач
-    if maininput == "2": # ВИПРАВЛЕНО: додано лапки
+    if maininput == "2":
         print("===============")
         calc()
         print("===============")
-    elif maininput == "1": # ВИПРАВЛЕНО: додано лапки
+    elif maininput == "1":
         print("---------------")
         print("EasyOS Справочник")
         print("Легка OC для повсякденого користування, командування виконуєтсья через термінал(Linux like)")
@@ -110,13 +110,13 @@ while stanprocess:
         print("EasyOS v/1 ALPHA(без валідації)")
         print(f"пасхалка = ввести в консоль: єбу діток")
         print("---------------")
-    elif maininput == "3": # ВИПРАВЛЕНО: додано лапки
+    elif maininput == "3":
         print("===============")
         rahuvalnyk()
         print("===============")
     elif maininput == "конор":
          open_media()
-    elif maininput == "4": # ВИПРАВЛЕНО: додано лапки
+    elif maininput == "4":
         print("===============")
         sortirovka()
         print("===============")
